@@ -97,8 +97,8 @@ def train_and_evaluate_model(X, y, param_grid, target_name, cv=8, save_plot=True
 
 # =================== Train Models for All Targets ====================
 models = {}
-targets = ['E_Ni', 'E_Co', 'S_Ni_Co', 'S_Co_Ni']
-cv_map = {'E_Ni': 8, 'E_Co': 8, 'S_Ni_Co': 8, 'S_Co_Ni': 10}  
+targets = ['E_Ni', 'E_Co']
+cv_map = {'E_Ni': 8, 'E_Co': 8}  
 
 for target in targets:
     y = data[target]
